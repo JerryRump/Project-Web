@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no"/>
+		
+		<title>
+			aanmelden
+		</title>
+	</head>
+	
+	
+	<body>
+	
+		<head>
+			<title>
+				artiekel
+			</title>
+		</head>
+		
+		<main>
+			<form method="post" action="articlelist.html">
+				<fieldset>
+					<legend>Aanmelden</legend>
+					<P>
+						<label for="Voornaam">Voornaam</label>
+						<input type="text" name="Voornaam" placeholder="Voornaam" required>
+					</p>
+					<p>
+						<label for="Voornaam">Achternaam</label>
+						<input type="text" name="Achternaam" placeholder="Achternaam" required>
+					</p>
+					<p>
+						<label for="Email">E-mailadres</label>
+						<input type="email" name="email" placeholder="voorbeeld@email.nl" autocomplete="on" required>
+					</p>
+					<p>
+						<label for="Straat">Straatnaam</label>
+						<input type="text" name="Straatnaam" placeholder="Straatnaam" autocomplete="on" required>
+						<label for="Huisnummer">Huisnummer</label>
+						<input type="number" name="Huisnummer" placeholder="1" maxlength="4" required>
+					</p>
+					<p>
+					<label for="Postcode">Postcode</label>
+						<input type="text" name="Postcode" placeholder="1111aa" maxlength="6" required>
+					</p>
+					<p>
+					<label for="Telenummer">Telefoon nummer</label>
+						<input type="number" name="Telenummer" placeholder="0687654321" maxlength="10" required>
+					</p>
+					<p>
+					<label for="Wachtwword">Wachtwoord</label>
+						<input type="password" name="Wachtwoord" placeholder="" required>
+					</p>
+					
+				<button type="submit" name="submit">
+					send
+				</button>	
+				</fieldset>			
+			</form>
+			<a href="#">of login</a>
+		</main>
+	</body>
+</html>

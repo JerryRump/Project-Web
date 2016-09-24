@@ -5,60 +5,92 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no"/>
 		
 		<title>
-			aanmelden
+			Aanmelden
 		</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	
 	
-	<body>
+	<body id="aanmeld-achtergrond">
 	
-		<head>
-			<title>
-				artiekel
-			</title>
-		</head>
+		<header>
+			<img src="images/logo2.png" alt="flixboek logo">
+			<nav>
+				<ul>
+					<li>
+					<a href="index.html">Verhalen</a>
+					</li>
+					<li>
+					<a href="#">Favorieten</a>
+					</li>
+					<li>
+					<a href="signup.html" id="active">Aanmelden</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 		
-		<main>
-			<form method="post" action="articlelist.html">
+		<main id="aanmelden">
+			<form method="post" action="index.html">
 				<fieldset>
-					<legend>Aanmelden</legend>
+					<legend>Registreren</legend>	
 					<P>
-						<label for="Voornaam">Voornaam</label>
-						<input type="text" name="Voornaam" placeholder="Voornaam" required>
+						<label for="voornaam">Voornaam</label>
+						<input type="text" name="voornaam" id="voornaam" placeholder="Voornaam" required>
 					</p>
 					<p>
-						<label for="Voornaam">Achternaam</label>
-						<input type="text" name="Achternaam" placeholder="Achternaam" required>
+						<label for="achternaam">Achternaam</label>
+						<input type="text" name="achternaam" id="achternaam" placeholder="Achternaam" required>
 					</p>
 					<p>
-						<label for="Email">E-mailadres</label>
-						<input type="email" name="email" placeholder="voorbeeld@email.nl" autocomplete="on" required>
+						<label for="email">E-mailadres</label>
+						<input type="email" name="email" id="email" placeholder="voorbeeld@email.nl" autocomplete="on" required>
+					</p>
+					
+					<p>
+						<label for="straat">Straatnaam</label>
+						<input type="text" name="straat" id="straat" placeholder="Straatnaam" autocomplete="on" required>
 					</p>
 					<p>
-						<label for="Straat">Straatnaam</label>
-						<input type="text" name="Straatnaam" placeholder="Straatnaam" autocomplete="on" required>
-						<label for="Huisnummer">Huisnummer</label>
-						<input type="number" name="Huisnummer" placeholder="1" maxlength="4" required>
+						<label for="huisnummer">Huisnummer</label>
+						<input type="number" name="huisnummer" id="huisnummer" placeholder="1" max="999" required>
 					</p>
 					<p>
-					<label for="Postcode">Postcode</label>
-						<input type="text" name="Postcode" placeholder="1111aa" maxlength="6" required>
+						<label for="postcode">Postcode</label>
+						<input type="text" name="postcode" id="postcode" placeholder="1111aa" maxlength="6" size="6" required>
 					</p>
 					<p>
-					<label for="Telenummer">Telefoon nummer</label>
-						<input type="number" name="Telenummer" placeholder="0687654321" maxlength="10" required>
+					<label for="telenummer">Telefoon nummer</label>
+						<input type="tel" name="telenummer" id="telenummer" placeholder="0687654321" maxlength="10" required>
 					</p>
 					<p>
-					<label for="Wachtwword">Wachtwoord</label>
-						<input type="password" name="Wachtwoord" placeholder="" required>
+					<label for="wachtwoord">Wachtwoord</label>
+						<input type="password" name="wachtwoord" id="wachtwoord" placeholder="" required>
 					</p>
 					
 				<button type="submit" name="submit">
-					send
+					Registreren
 				</button>	
 				</fieldset>			
 			</form>
-			<a href="#">of login</a>
+			<form method="post" action="index.html">
+				<fieldset>
+					<legend>Aanmelden</legend>
+					<p>
+						<label for="A_email">E-mailadres</label>
+						<input type="email" name="email" id="A_email" placeholder="voorbeeld@email.nl" autocomplete="on" required>
+					</p>
+					<p>
+					<label for="A_wachtwoord">Wachtwoord</label>
+						<input type="password" name="Wachtwoord" id="A_wachtwoord" placeholder="" required>
+					</p>
+					
+				<button type="submit" name="submit">
+					Aanmelden
+				</button>	
+				</fieldset>			
+			</form>
 		</main>
 	</body>
 </html>
